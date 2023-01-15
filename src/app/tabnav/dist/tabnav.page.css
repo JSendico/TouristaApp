@@ -1,0 +1,25 @@
+ion-tab-bar {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 50px;
+  --background: #185C64;
+  border-radius: 20px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+ion-tab-bar ion-tab-button {
+  --background: #185C64;
+}
+ion-tab-bar ion-label {
+  font-size: 10px;
+  color: white;
+}
+ion-tab-bar ion-icon {
+  font-size: 20px;
+}
+ion-tab-bar ion-tab-button:focus ion-icon,
+ion-tab-bar ion-tab-button:focus ion-label {
+  color: #FAD5A5 !important;
+  --ion-color-base: #FAD5A5 !important;
+}

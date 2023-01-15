@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+
+ion-icon {
+  color: #FF9529;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h3 {
+  margin-top: 4px;
+}
+h3 span {
+  font-size: 16px;
+}

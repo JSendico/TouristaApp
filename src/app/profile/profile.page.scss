@@ -1,0 +1,47 @@
+ion-content {
+    h1 {
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        margin-left: 40%;
+        margin-top: 30px;
+    }
+    ion-card {
+        margin: 30px;
+        border-radius: 20px;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: relative;
+    }
+    .profile-icon {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 35%;
+        top: 0;
+    }
+    .editProfile {
+        margin-top: 20%;
+        margin-left: 35%;
+    }
+    .logoutbtn {
+        margin: 30px;
+        height: 50px;
+        font-size: 17px;
+        margin-bottom: 6em;
+    }
+}

@@ -1,0 +1,58 @@
+.wave-top {
+  width: 100%;
+  bottom: 0;
+  height: auto;
+  position: absolute;
+  z-index: -1;
+}
+
+ion-content {
+  margin: 30px;
+}
+ion-content h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.container-heading {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 10%;
+}
+.container-heading .logo {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+ion-card {
+  margin-right: 30px;
+  margin-left: 30px;
+  border: 0 solid;
+}
+ion-card ion-input {
+  font-size: 16px;
+}
+ion-card ion-label {
+  font-size: 16px;
+}
+ion-card ion-button {
+  height: 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  padding: 0 10px;
+}

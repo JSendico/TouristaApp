@@ -1,0 +1,18 @@
+<div>
+    <div style="display: flex; gap: 9px; ">
+        <ion-icon *ngFor="let x of stars" [name]="x.filled ? 'star' : 'star-outline'" (click)="rate($event)" [id]="x.key">
+
+        </ion-icon>
+        <h3>{{rateNumber}} <span>Star</span></h3>
+
+
+
+
+    </div>
+    <br>
+    <h4>5 Stars ({{countStarFive}}) &nbsp;<span>4 Stars ({{countStarFour}})</span>&nbsp;
+        <span>3 Stars ({{countStarThree}})</span>&nbsp; <span>2 Stars ({{countStarTwo}})</span> &nbsp;<span>1 Stars ({{countStarOne}})</span></h4>
+
+
+
+</div>

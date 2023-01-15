@@ -1,0 +1,49 @@
+.heading-title {
+    h1 {
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        color: #185C64;
+    }
+    h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        color: #FF9529;
+    }
+    h3 {
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+    }
+}
+
+ion-content {
+    form {
+        ion-input {
+            font-size: 16px;
+            color: black;
+            height: 3em;
+        }
+        ion-label {
+            font-size: 16px;
+        }
+        ion-textarea {
+            height: 900em;
+            font-size: 16px;
+        }
+        ion-button {
+            --background: #0d9568;
+            height: 40px;
+            margin-top: 20px;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+    }
+    .content {
+        margin-bottom: 8em;
+    }
+}

@@ -1,0 +1,61 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Oswald:wght@300;600&family=Ubuntu&display=swap" rel="stylesheet">
+
+
+<ion-content>
+
+
+
+    <ion-toolbar style="position:absolute; margin-top: 10px; margin-left: 20px; --background: #185C64; color:azure">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/login" icon="chevron-back" size="larger" color="light"></ion-back-button>
+        </ion-buttons>
+        <ion-title> Back</ion-title>
+    </ion-toolbar>
+
+
+
+
+    <ion-img src="assets/wave-top.png"></ion-img>
+    <ion-img src="assets/wave5.svg" class="wave-top">
+    </ion-img>
+    <div class="container-heading">
+
+
+
+        <h1>Create New Account</h1>
+        <h3>Fill in required fields</h3>
+    </div>
+    <ion-card>
+        <form>
+            <ion-list>
+                <ion-item>
+                    <ion-label position="floating">Full Name</ion-label>
+                    <ion-input required type="text" [(ngModel)]="name" name="name"></ion-input>
+                    <ion-icon name="person" slot="end" size="large" color="dark"></ion-icon>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="floating">Email Address</ion-label>
+                    <ion-input required type="email" [(ngModel)]="email" name="email"></ion-input>
+                    <ion-icon name="mail" slot="end" size="large" color="dark"></ion-icon>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="floating">Phone Number</ion-label>
+                    <ion-input required type="tel" [(ngModel)]="phone" name="phone"></ion-input>
+                    <ion-icon name="call" slot="end" size="large" color="dark"></ion-icon>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="floating">Password</ion-label>
+                    <ion-input required type="password" [(ngModel)]="password" name="password"></ion-input>
+                    <ion-icon name="lock-closed" slot="end" size="large" color="dark"></ion-icon>
+                </ion-item>
+
+                <ion-button type="submit" style="--background: #183664;" expand="block" shape="round" type="submit" (click)="register()">Submit</ion-button>
+            </ion-list>
+        </form>
+    </ion-card>
+</ion-content>

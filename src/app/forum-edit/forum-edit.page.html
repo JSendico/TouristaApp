@@ -1,0 +1,15 @@
+<ion-content>
+
+    <form (ngSubmit)="addPost()">
+        <ion-item>
+            <ion-label position="stacked">Title</ion-label>
+            <ion-input type="text" [(ngModel)]="title" name="title"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Content</ion-label>
+            <ion-textarea [(ngModel)]="content" name="content"></ion-textarea>
+        </ion-item>
+
+    </form>
+
+</ion-content>

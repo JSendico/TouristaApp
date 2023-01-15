@@ -1,0 +1,107 @@
+.heading-title {
+    h1 {
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        color: #185C64;
+    }
+    h2 {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: 'Kaushan Script', cursive;
+        color: #FF9529;
+    }
+    h3 {
+        text-align: center;
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+    }
+}
+
+ion-content {
+    --background: white;
+    h4.location {
+        font-size: 20px;
+        font-weight: bold;
+        color: #9ac5ba;
+        text-align: center;
+    }
+    .main-info {
+        text-align: center;
+        margin-top: 4em;
+        img {
+            height: 12em;
+        }
+        h5 {
+            margin-top: 1em;
+            font-size: 2em;
+            color: #9ac5ba;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 5em;
+        }
+    }
+    .other-info {
+        white-space: nowrap;
+        overflow-x: auto;
+        margin-top: 2em;
+        ion-card {
+            display: inline-block;
+            min-width: 150px;
+            scroll-behavior: smooth;
+            margin: 0;
+            margin-right: 15px;
+            border-radius: 10px;
+            img {
+                height: 9em;
+                width: 9em;
+            }
+            .info {
+                padding-right: 3em;
+                margin-top: 2em;
+                h5 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #9ac5ba;
+                    margin-bottom: 3px;
+                }
+                h3 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+        }
+    }
+    .hourly {
+        margin-top: 1em;
+        margin-bottom: 6.6em;
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .hourly-info {
+            white-space: nowrap;
+            overflow-x: auto;
+            .info {
+                display: inline-block;
+                text-align: center;
+                min-width: fit-content;
+                scroll-behavior: smooth;
+                margin-right: 2em;
+            }
+            img {
+                height: 5em;
+                width: 5em;
+            }
+            p {
+                color: #9ac5ba;
+                font-size: 16px;
+            }
+        }
+    }
+}

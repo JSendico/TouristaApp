@@ -1,0 +1,60 @@
+<!-- forum.component.html -->
+
+<ion-content>
+
+    <div class="heading-title">
+        <h1> Tourista App </h1>
+        <h2>- Forum- </h2>
+        <h3>Give us your thoughts!</h3>
+
+    </div>
+    <ion-card>
+        <form (ngSubmit)="addPost()">
+            <ion-item>
+                <ion-input required type="text " [(ngModel)]="user.userName " name="name " disabled="true"></ion-input>
+                <ion-icon name="person" slot="start" size="large" color="dark"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <ion-label position="stacked">Title</ion-label>
+                <ion-input type="text" [(ngModel)]="title" name="title" placeholder="Type Title"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="stacked">Content</ion-label>
+                <ion-textarea [(ngModel)]="content" name="content" placeholder="What is on you mind?"></ion-textarea>
+            </ion-item>
+            <ion-button type="submit" expand="full" expand="block" shape="round">Add Post</ion-button>
+        </form>
+    </ion-card>
+
+
+    <!--DISPLAY DETAILS-->
+    <div class="content">
+        <ion-card *ngFor="let post of posts | async">
+
+            <ion-card-header>
+
+                <h1>
+                    <ion-icon name="person" slot="start" size="small" color="dark"></ion-icon> {{post.payload.doc.data().userName }}
+                </h1>
+
+                <h4>Posted: {{ post.payload.doc.data().postedDate | date:'medium'}}</h4>
+                <ion-card-title>{{ post.payload.doc.data().title }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                {{ post.payload.doc.data().content }}
+            </ion-card-content>
+
+            <ion-card-content [hidden]="hideContent">
+                <ion-button ng-hide="!showButton" (click)="editPost(post)">
+                    <ion-icon slot="icon-only" name="create"></ion-icon>Edit</ion-button>
+
+                <ion-button ng-hide="!showButton" (click)="deletePost(post)" color="danger">
+                    <ion-icon slot="icon-only" name="trash"></ion-icon>Delete</ion-button>
+
+            </ion-card-content>
+
+        </ion-card>
+    </div>
+
+
+</ion-content>

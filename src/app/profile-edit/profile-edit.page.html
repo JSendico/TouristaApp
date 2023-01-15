@@ -1,0 +1,48 @@
+<ion-content>
+    <div class="container-heading">
+
+        <ion-toolbar style="position:absolute; margin-top: 20px; margin-left: 20px; --background: #185C64; color:azure">
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="tab-nav/profile" icon="chevron-back" size="larger" color="light"></ion-back-button>
+            </ion-buttons>
+            <ion-title> Back</ion-title>
+        </ion-toolbar>
+
+
+
+
+        <ion-img src="assets/wave-top.png"></ion-img>
+
+        <h1>Edit Your Profile</h1>
+
+
+    </div>
+    <ion-card>
+        <form>
+            <ion-list>
+                <ion-item>
+                    <ion-label position=" floating ">Full Name:</ion-label>
+                    <ion-input required type="text " [(ngModel)]="user.userName " name="name "></ion-input>
+                    <ion-icon name="person" slot="start" size="large" color="dark"></ion-icon>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="floating ">Email Address:</ion-label>
+                    <ion-input required type="email " [(ngModel)]="user.userEmail " name="email "></ion-input>
+                    <ion-icon name="mail" slot="start" size="large" color="dark"></ion-icon>
+                </ion-item>
+
+                <ion-item>
+                    <ion-label position="floating ">Phone Number:</ion-label>
+                    <ion-input required type="tel " [(ngModel)]="user.userPhone " name="phone "></ion-input>
+                    <ion-icon name="call" slot="start" size="large" color="dark"></ion-icon>
+                </ion-item>
+
+
+
+                <ion-button type="submit " style="--background: #183664; " expand="block " shape="round " type="submit " (click)="confirm()">Save</ion-button>
+            </ion-list>
+        </form>
+    </ion-card>
+
+</ion-content>

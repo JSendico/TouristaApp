@@ -1,0 +1,25 @@
+.container-heading h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+ion-card {
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+  border: 0 solid;
+  border-radius: 10px;
+}
+ion-card ion-input {
+  font-size: 16px;
+  margin: 20px;
+}
+ion-card ion-label {
+  font-size: 16px;
+}
+ion-card ion-button {
+  height: 50px;
+  margin-top: 50px;
+  font-size: 16px;
+}
